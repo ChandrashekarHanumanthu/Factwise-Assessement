@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import Chandu from './components/Folder/Chandu'
 import SearchBar from './components/SearchBar'
 import UserCard from './components/UserCard';
 import './App.css'
@@ -266,6 +267,7 @@ const handleDelete=(userId)=>{
 return (
   <div className="App">
     <h1 className='text-center'>Celebrity Manager</h1>
+    <Chandu/>
     <SearchBar onSearch={handleSearch} />
     <ul>
       {filteredCelebrities.length > 0
